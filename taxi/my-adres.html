@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Где Я? Вызвать Taxi.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Если вы используете API локально, то в URL ресурса необходимо указывать протокол в стандартном виде (http://...)-->
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="//yandex.st/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="event_reverse_geocode.js" type="text/javascript"></script>
+
+	<style>
+        html, body, #map {
+            width: 90%; height: 90%; padding: 0; margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+<br />
+<br />
+<form name="address" method="post" action="my-adres.php">
+<b>Адрес отправления:</b>
+<textarea rows=1 cols=70 name=adres001 SIZE=50% id="ID_ADDRESS"></textarea>
+<b>Разное:</b>
+<textarea rows=1 cols=20 name=Geox SIZE=50% id="ID_Geox"></textarea>
+<textarea rows=1 cols=20 name=Geoy SIZE=50% id="ID_Geoy"></textarea>
+<b>Подъезд:</b>
+<input name="paradnaya"   type="text" VALUE="1" SIZE=3% >
+<td width=30%>Выполнено:</td>
+<td width=8%>
+<SELECT NAME='vipolneno'> 
+<OPTION value = 'Нет'>Нет
+<OPTION value = 'Да'>Да
+<OPTION value = 'Выполнено'>Выполнено
+</SELECT> 
+<INPUT type="submit" name="update_baza" value="Вызвать Taxi.">
+</form>
+<br />
+<br />
+
+<div id="map"></div>
+</body>
+</html>
