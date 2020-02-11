@@ -8,7 +8,7 @@ $nameprojekt = 'taxi';
 $dbhostnameSQL = 'localhost';
 $dbNameSQL = 'c1_taxi_8v7_ru';
 $usernameSQL = 'c1_taxi_8v7_ru';
-$passwordSQL = 'bq#fhNPLMw2Ui';
+$passwordSQL = '111111';
 
 
 ?>
